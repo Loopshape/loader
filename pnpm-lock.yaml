@@ -32,6 +32,9 @@ dependencies:
   bootstrap:
     specifier: ^5.3.3
     version: 5.3.3(@popperjs/core@2.11.8)
+  bottleneck:
+    specifier: ^2.19.5
+    version: 2.19.5
   bower:
     specifier: ^1.8.14
     version: 1.8.14
@@ -74,12 +77,18 @@ dependencies:
   hmac:
     specifier: ^1.0.1
     version: 1.0.1
+  husky:
+    specifier: ^9.0.11
+    version: 9.0.11
   jquery:
     specifier: ^3.7.1
     version: 3.7.1
   jsdom:
     specifier: ^24.0.0
     version: 24.0.0
+  loader:
+    specifier: ^2.1.1
+    version: 2.1.1
   lodash:
     specifier: ^4.17.21
     version: 4.17.21
@@ -3308,6 +3317,12 @@ packages:
       ms: 2.1.3
     dev: false
 
+  /husky@9.0.11:
+    resolution: {integrity: sha512-AB6lFlbwwyIqMdHYhwPe+kjOC3Oc5P3nThEoW/AaO2BX3vJDjWPFxYLxokUZOo6RNX20He3AaT8sESs9NJcmEw==}
+    engines: {node: '>=18'}
+    hasBin: true
+    dev: false
+
   /iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}
     engines: {node: '>=0.10.0'}
@@ -3792,6 +3807,10 @@ packages:
       object.map: 1.0.1
       rechoir: 0.7.1
       resolve: 1.22.8
+    dev: false
+
+  /loader@2.1.1:
+    resolution: {integrity: sha512-Z6nHbyKiECMexVUmpIAVXp+f+8okRtfiMAQ9j0eTtImCghxSqQwrbeSiAyCYKBnfvRlgXLdQt0tPuaZmcBQzpw==}
     dev: false
 
   /local-ip-addresses-and-hostnames@0.1.2:

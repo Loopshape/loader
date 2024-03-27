@@ -7,7 +7,17 @@
 	<a href="https://github.com/Loopshape/loader/blob/main/LICENSE.md" target="_blank"><img alt="📝 License: MIT" src="https://img.shields.io/badge/%F0%9F%93%9D_license-MIT-21bb42.svg"></a>
 	<a href="http://npmjs.com/package/loader"><img alt="📦 npm version" src="https://img.shields.io/npm/v/loader?color=21bb42&label=%F0%9F%93%A6%20npm" /></a>
 	<img alt="💪 TypeScript: Strict" src="https://img.shields.io/badge/%F0%9F%92%AA_typescript-strict-21bb42.svg" />
+</p><img alt="💪 TypeScript: Strict" src="https://img.shields.io/badge/%F0%9F%92%AA_typescript-strict-21bb42.svg" />
+</p><img alt="💪 TypeScript: Strict" src="https://img.shields.io/badge/%F0%9F%92%AA_typescript-strict-21bb42.svg" />
 
 <!-- You can remove this notice if you don't want it 🙂 no worries! -->
 
 > 💙 This package was templated with [`loader`](https://github.com/Loopshape/loader).
+
+<!-- You can remove this notice if you don't want it 🙂 no worries! -->
+
+> 💙 This package was templated with [`loader`](https://github.com/Loopshape/loader).
+
+<!-- You can remove this notice if you don't want it 🙂 no worries! -->
+
+> 💙 This package was templated with [`loader`](https://github.com/JoshuaKGoldberg/loader).
