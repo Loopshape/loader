@@ -1,7 +1,29 @@
+/**
+ * @description loads resources (either CSS or JavaScript) from an array of sources,
+ * tracking the number of loaded resources and calling a provided callback function
+ * when all resources have been loaded.
+ * 
+ * @param { array } sources - list of files to load, including CSS and JavaScript
+ * files, which are processed by the `loadScript()` and `loadCSS()` functions accordingly.
+ * 
+ * @param { ‘function’. } callback - function that will be executed once all resources
+ * have been loaded, indicating that the loading process has finished successfully.
+ * 
+ * 		- Type: Function
+ * 		- Description: A callback function that is executed when all sources have been
+ * loaded. It takes no arguments.
+ */
 function loadResources(sources, callback) {
     let loadedCount = 0;
     const totalSources = sources.length;
 
+    /**
+     * @description loads a script tag in a webpage by creating an HTML element, attaching
+     * event listeners, and appending it to the body element. When the script is loaded
+     * or the state is 'complete', the function calls a callback function if present.
+     * 
+     * @param { string } source - URL or script code of the script to be loaded.
+     */
     function loadScript(source) {
         const script = document.createElement('script');
         script.src = source;
@@ -24,6 +46,14 @@ function loadResources(sources, callback) {
         document.body.appendChild(script);
     }
 
+    /**
+     * @description creates a link element in the HTML document's head, sets its `rel`
+     * attribute to "stylesheet", and its `href` attribute to the given CSS source. When
+     * the linked CSS is loaded or errored, the function increments a count variable,
+     * checks if all sources have been loaded, and calls a callback function if applicable.
+     * 
+     * @param { string } source - URL of the CSS file to be loaded.
+     */
     function loadCSS(source) {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
@@ -59,6 +89,10 @@ function loadResources(sources, callback) {
     });
 }
 
+/**
+ * @description imports and executes a JavaScript module named `app.response.js`,
+ * passing the result to a specified handleFunction or logging an error message if necessary.
+ */
 function executeAppResponse() {
     try {
         // Assuming app.response.js is in the same directory
@@ -120,6 +154,16 @@ loadResources(sources, function() {
     executeAppResponse();
 });
 
+/**
+ * @description logs the input "result" to the console with a timestamp as the index
+ * for the multidimensional array.
+ * 
+ * @param { uncertain or ambiguous data type, as it is not specified or defined within
+ * the context of the given code snippet. } result - value that is stored at the
+ * current time stamp in a multidimensional array.
+ * 
+ * 		- Timestamp: A new date-time stamp in milliseconds, captured using `new Date().getTime()`.
+ */
 function handleResult(result) {
     // Assuming you want to store the result in a multidimensional array with timestamp as index
     const timestamp = new Date().getTime();
