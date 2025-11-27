@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebTraCom - Ollama Orchestrator v2</title>
+<style>
+  body {
+    background-color: #211;
+    color: #fdb;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 2em;
+  }
+  #logo-section { text-align: center; margin-bottom: 2em; }
+  #logo { font-size: 2em; color: #fec; }
+  #slogan { font-size: 1em; color: #fdb; }
+  #main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    width: 95%;
+    max-width: 1600px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    flex: 1;
+    min-width: 300px;
+  }
+  .panel {
+    background-color: #423;
+    border: 1px solid #534;
+    border-radius: 8px;
+    padding: 1.5em;
+  }
+  h2 {
+    margin-top: 0;
+    color: #fec;
+    border-bottom: 1px solid #534;
+    padding-bottom: 0.5em;
+  }
+  canvas {
+    background-color: #312;
+    border-radius: 4px;
+    width: 100%;
+    height: auto;
+  }
+  .control-group { margin-bottom: 1em; }
+  label { display: block; margin-bottom: 0.5em; }
+  input, textarea, select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 4px;
+    border: 1px solid #534;
+    background-color: #312;
+    color: #fda;
+    font-size: 1em;
+    box-sizing: border-box;
+  }
+  button {
+    width: 100%;
+    padding: 0.75em;
+    border: none;
+    border-radius: 4px;
+    background-color: #745;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  button:hover { background-color: #856; }
+  button:disabled { background-color: #534; cursor: not-allowed; }
+  .display-box {
+    background-color: #312;
+    padding: 1em;
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    flex-grow: 1;
+    min-height: 100px;
+  }
+  #mindmap-container ul {
+      list-style-type: none;
+      padding-left: 20px;
+  }
+  #mindmap-container ul li {
+      background: #534;
+      margin: 5px;
+      padding: 5px;
+      border-radius: 3px;
+  }
+</style>
+</head>
+<body>
+
+<section id="logo-section">
+  <div id="logo">WebTraCom</div>
+  <div id="slogan">Ollama Orchestration & Indexed Offset Modulation Interface</div>
+</section>
+
+<main id="main-container">
+  <div class="column">
+    <div id="visualization" class="panel">
+      <h2>Visual Octal Wave Streamlines</h2>
+      <canvas id="globe-canvas"></canvas>
+    </div>
+    <div id="entropy-panel" class="panel">
+        <h2>Offset-Entropy</h2>
+        <div id="entropy-display" class="display-box">Awaiting data...</div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div id="orchestration-ui" class="panel">
+      <h2>Agent Delegate Control</h2>
+      <div class="control-group">
+        <label for="genesis-input">Genesis Text (for validation hash):</label>
+        <input type="text" id="genesis-input" placeholder="Enter foundational text...">
+        <button id="set-genesis-hash" style="margin-top: 0.5em;">Set Genesis Hash</button>
+      </div>
+      <hr style="border-color: #534; margin: 1.5em 0;">
+      <div class="control-group">
+        <label for="model-selector">Select Model:</label>
+        <select id="model-selector"></select>
+      </div>
+      <div class="control-group">
+        <label for="prompt-input">Enter Prompt:</label>
+        <textarea id="prompt-input" rows="4"></textarea>
+      </div>
+      <button id="submit-prompt">Submit to AI Bridge</button>
+    </div>
+    <div id="importance-panel" class="panel">
+        <h2>Modulated Importance (Hashes)</h2>
+        <div id="importance-display" class="display-box">Awaiting data...</div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div id="response-panel" class="panel">
+        <h2>Response & Security Validation</h2>
+        <div id="validation-status" class="display-box" style="min-height: 50px; margin-bottom: 1em;">Validation status will appear here.</div>
+        <div id="mindmap-container" class="display-box">Mindmap will appear here.</div>
+    </div>
+  </div>
+</main>
+
+<script src="app.response.js"></script> 
+<script src="app.request.js"></script>
+<script src="frontend.js"></script>
+
+</body>
+</html>
