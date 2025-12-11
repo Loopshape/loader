@@ -14,7 +14,7 @@ Add (access to) batch + crud + soap + rest fileindexed genesis-hash processing f
 scripting of chunk tokenizes as a request from app.request.js to embed this into the agent delegates as a mindmap security validation and create an additional 
 index to value the offset-entropy of the overall progress as a modulated sha256 sorted ordering of importance besides the requested filesystem localisation, 
 that leads  of trust by ai and resolves an ongoing bidirectional pipeline rehashed chunk assembly, which streams the visual octal waves onto particled 
-es module nodejs particle streamlines and map them to the local ai api bridge on localhost:11434 
+es module nodejs particle streamlines and map them to the local ai api bridge on localhost:11434 (optional MD5 backtrace for customer-clients)
 
 Then create an orchestration for local ollama model-pool and use the dynamic script app.response.js to embed this into the agent delegates 
 for creating indexed offset modulation besides an ogoing bidirectional pipeline, which streams the visual octal waves onto particled 
